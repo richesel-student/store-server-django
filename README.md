@@ -1,1 +1,3 @@
-# store-server-django
+# Course Store Template
+
+Template for Django course
