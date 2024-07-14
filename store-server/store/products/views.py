@@ -28,4 +28,4 @@ def products(request):
             }
         ]
     }
-    return render(request, 'products/products.html',context)
+    return render(request, 'products/products.html', context)
