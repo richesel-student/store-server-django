@@ -1,7 +1,11 @@
 from django.shortcuts import render
 
+from users.models import User
+from users.forms import UserLoginForum
+
 def login(reqest):
-    return render(reqest, 'users/login.html')
+    context = {'form': UserLoginForum()}
+    return render(reqest, 'users/login.html', context)
 
 def registration(reqest):
     return render(reqest, 'users/registration.html')
