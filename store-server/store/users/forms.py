@@ -17,6 +17,9 @@ class  UserRegistrationForm(UserCreationForm):
         'class': 'form-control py-4', 'placeholder': 'Введите имя'}))
     last_name = forms.CharField(widget=forms.TextInput(attrs={
         'class': 'form-control py-4', 'placeholder': 'Введите фамилию'}))
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        'class': 'form-control py-4', 'placeholder': 'Введите имя пользователя'}))
+
     email = forms.CharField(widget=forms.EmailInput(attrs={
         'class': 'form-control py-4', 'placeholder': 'Введите адрес эл. почты'}))
     password1 = forms.CharField(widget=forms.PasswordInput(attrs={

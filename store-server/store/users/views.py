@@ -33,21 +33,12 @@ def registration(request):
 
 #
 def profile(request):
-    context = {'title': 'Store - Профиль'}
+    form = UserProfileForm()
+    context = {'title': 'Store - Профиль', 'form' : form }
+    # context = {'title': 'Store - Профиль'}
     return render(request, 'users/profile.html', context)
 
-# def registration(request):
-#     if request.method == 'POST':
-#         form = UserRegistrationForm(data=request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return HttpResponseRedirect(reverse('user:login'))
-#         else:
-#             print(form.errors)
-#     else:
-#         form = UserRegistrationForm()
-#     context = {'tiatle': 'Store - Профиль', 'form': form}
-#     return render(request, 'users/profile.html', context)
+
 
 
 # Create your views here.
